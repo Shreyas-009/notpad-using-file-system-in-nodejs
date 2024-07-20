@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create File</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Gilroy';
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    #main {
+        width: 100%;
+        height: 100%;
+        background: rgb(4, 4, 4);
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    textarea {
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+        background-repeat: 10px;
+        background: rgb(40, 40, 40);
+        border: none;
+        border-radius: 1rem;
+        color: white;
+        padding: 1rem;
+    }
+
+    input {
+        background: rgb(40, 40, 40);
+        border: none;
+        border-radius: 1rem;
+        color: white;
+        padding: 1rem 1rem;
+    }
+
+    button,
+    #button {
+        background: rgb(40, 40, 40);
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        flex: auto;
+
+        &:hover {
+            background: purple;
+        }
+    }
+
+    form {
+        padding: 1rem;
+        border-radius: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 20%;
+        gap: 10px;
+        background: rgb(22, 22, 22);
+        color: white;
+    }
+
+    #option {
+        display: flex;
+        gap: 10px;
+    }
+
+    a {
+        background: rgb(40, 40, 40);
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        flex: auto;
+
+        &:hover {
+            background: purple;
+        }
+
+        color: white;
+        text-decoration: none;
+    }
+
+    #redirect {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+</style>
+
+<body>
+    <div id="main">
+        <a id="redirect" href="/">Files</a>
+        <form method="post" action="/create">
+            <label for="name">Name : </label>
+            <input type="text" id="name" name="name" required>
+            <label for="message">Message : </label>
+            <textarea id="message" name="message" required /></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
