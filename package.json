@@ -3,5 +3,17 @@
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "nodemon": "^3.1.4"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "notpad-project",
+  "version": "1.0.0",
+  "description": "A notpad application using filesystem",
+  "main": "server.js",
+  "author": "Shreyas",
+  "license": "ISC",
+  "engines": {
+    "node": "14.x"
   }
 }
