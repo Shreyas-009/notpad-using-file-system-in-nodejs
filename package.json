@@ -12,8 +12,5 @@
   "description": "A notpad application using filesystem",
   "main": "server.js",
   "author": "Shreyas",
-  "license": "ISC",
-  "engines": {
-    "node": "14.x"
-  }
+  "license": "ISC"
 }
