@@ -2,7 +2,8 @@
   "dependencies": {
     "ejs": "^3.1.10",
     "express": "^4.19.2",
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.4",
+    "vercel": "^35.2.4"
   },
   "scripts": {
     "start": "node server.js"
