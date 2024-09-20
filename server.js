@@ -6,7 +6,10 @@ const path = require("path");
 // Use the /tmp directory for storing files on Vercel
 const filesPath = "/tmp/files";
 
+// Set the views directory
+app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "ejs");
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
