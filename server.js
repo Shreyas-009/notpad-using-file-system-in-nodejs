@@ -1,15 +1,16 @@
 const express = require("express");
 const app = express();
 const fs = require("fs");
-
 const path = require("path");
-const filesPath = path.join(__dirname, "files");
+
+// Use the /tmp directory for storing files on Vercel
+const filesPath = "/tmp/files";
 
 app.set("view engine", "ejs");
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// Ensure the files directory exists
+// Ensure the /tmp/files directory exists
 if (!fs.existsSync(filesPath)) {
   fs.mkdirSync(filesPath);
 }
